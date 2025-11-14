@@ -1,5 +1,5 @@
 extends CharacterBody2D
-var speed = 350
+var speed = 450
 
 func _physics_process(delta):
 	$AnimatedSprite2D.play("Idle")

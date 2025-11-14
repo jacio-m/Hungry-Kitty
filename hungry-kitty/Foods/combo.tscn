@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c87fss5d4icct"]
+
+[ext_resource type="Texture2D" uid="uid://ccwjutjwcfun5" path="res://Foods/combo.png" id="1_4wnmo"]
+[ext_resource type="Script" uid="uid://bk32npaw8ommj" path="res://Foods/food.gd" id="2_f35mb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f35mb"]
+size = Vector2(75, 71)
+
+[node name="Combo" type="Area2D"]
+script = ExtResource("2_f35mb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_4wnmo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_f35mb")

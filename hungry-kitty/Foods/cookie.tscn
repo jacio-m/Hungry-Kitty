@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cuvhleqkja154"]
+
+[ext_resource type="Script" uid="uid://bk32npaw8ommj" path="res://Foods/food.gd" id="1_qudek"]
+[ext_resource type="Texture2D" uid="uid://cv877h6lpw827" path="res://Foods/cookie.png" id="2_8dr82"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t6how"]
+radius = 37.0135
+
+[node name="Cookie" type="Area2D"]
+script = ExtResource("1_qudek")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_8dr82")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_t6how")

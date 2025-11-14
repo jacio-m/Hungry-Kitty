@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://i12tmdtnhucm"]
+[gd_scene load_steps=7 format=3 uid="uid://i12tmdtnhucm"]
 
 [ext_resource type="Texture2D" uid="uid://pdulgpr6lpbn" path="res://Main Game/skyBG.jpg" id="1_x6ho8"]
 [ext_resource type="PackedScene" uid="uid://ka2ld0j25jfo" path="res://Foods/pastel.tscn" id="2_lp10x"]
 [ext_resource type="PackedScene" uid="uid://bk6lw8wcv2j5p" path="res://Player/player.tscn" id="3_n8baw"]
+[ext_resource type="PackedScene" uid="uid://c87fss5d4icct" path="res://Foods/combo.tscn" id="3_olwmy"]
+[ext_resource type="PackedScene" uid="uid://cuvhleqkja154" path="res://Foods/cookie.tscn" id="4_lp10x"]
+[ext_resource type="PackedScene" uid="uid://cl5vlsno8f6i" path="res://Foods/bento.tscn" id="5_vaqtm"]
 
 [node name="Main" type="Node"]
 
@@ -11,8 +14,17 @@ position = Vector2(571.5, -117)
 scale = Vector2(1.81385, 1.33615)
 texture = ExtResource("1_x6ho8")
 
-[node name="Pastel" parent="." instance=ExtResource("2_lp10x")]
-position = Vector2(549, -50)
-
 [node name="Player" parent="." instance=ExtResource("3_n8baw")]
 position = Vector2(-4, 17)
+
+[node name="Combo" parent="." instance=ExtResource("3_olwmy")]
+position = Vector2(671, -58)
+
+[node name="Cookie" parent="." instance=ExtResource("4_lp10x")]
+position = Vector2(406, -62)
+
+[node name="Bento" parent="." instance=ExtResource("5_vaqtm")]
+position = Vector2(772, -46)
+
+[node name="Pastel" parent="." instance=ExtResource("2_lp10x")]
+position = Vector2(549, -50)

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://chpoqfpajhxfy"]
+
+[ext_resource type="Texture2D" uid="uid://c8a1ut0dyqgma" path="res://Foods/pudding.png" id="1_pvqvr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ukead"]
+size = Vector2(69, 57)
+
+[node name="Pudding" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_pvqvr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -1.5)
+shape = SubResource("RectangleShape2D_ukead")
