@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://i12tmdtnhucm"]
+
+[ext_resource type="Texture2D" uid="uid://pdulgpr6lpbn" path="res://Main Game/skyBG.jpg" id="1_x6ho8"]
+[ext_resource type="PackedScene" uid="uid://ka2ld0j25jfo" path="res://Foods/pastel.tscn" id="2_lp10x"]
+[ext_resource type="PackedScene" uid="uid://bk6lw8wcv2j5p" path="res://Player/player.tscn" id="3_n8baw"]
+
+[node name="Main" type="Node"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(571.5, -117)
+scale = Vector2(1.81385, 1.33615)
+texture = ExtResource("1_x6ho8")
+
+[node name="Pastel" parent="." instance=ExtResource("2_lp10x")]
+position = Vector2(549, -50)
+
+[node name="Player" parent="." instance=ExtResource("3_n8baw")]
+position = Vector2(-4, 17)
