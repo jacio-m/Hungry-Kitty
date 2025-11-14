@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://f3wyvnahsm7h"
-path="res://.godot/imported/icon.svg-22ca46ad79075e677a21c492cd6e4f87.ctex"
+uid="uid://dooevunja0x03"
+path="res://.godot/imported/kitty1.png-587ac7336d21a412abb7ac192860d459.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player/icon.svg"
-dest_files=["res://.godot/imported/icon.svg-22ca46ad79075e677a21c492cd6e4f87.ctex"]
+source_file="res://Player/kitty1.png"
+dest_files=["res://.godot/imported/kitty1.png-587ac7336d21a412abb7ac192860d459.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false
